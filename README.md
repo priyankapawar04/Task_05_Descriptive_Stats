@@ -229,3 +229,44 @@ results/phase_b_prompt_log.md
 
 These files preserve the prompts, responses, ground-truth comparisons, and
 validation notes used during the analysis.
+
+
+---
+
+# Judgment Question 4 — Coach Advisory Question
+
+The final advisory question asked whether the coach should prioritize
+offensive development or defensive improvement and, if offense was
+recommended, which player should be prioritized.
+
+The model recommended **offensive development with Alyssa Murray as the
+individual priority**.
+
+The recommendation was based on:
+
+- 332 team goals
+- 188 opponent goals
+- 144-goal differential
+- 18 wins and 4 losses
+- Alyssa Murray's 104 total points
+- Murray's 64 goals and 40 assists
+- Murray's 54.2% shooting percentage
+
+The model also recognized that Kayla Treanor had more goals and shots than
+Murray.
+
+The recommendation was classified as **CORRECT / DEFENSIBLE**. The numerical
+claims matched the dataset, and the model appropriately acknowledged that the
+dataset does not contain player-level defensive statistics.
+
+An important limitation is that the available data cannot prove that
+offensive development would produce additional wins next season. The team
+already scored 332 goals and won 18 of 22 games.
+
+This question demonstrated the value of explicit prompt instructions requiring
+the model to distinguish dataset-supported facts from assumptions and to avoid
+inventing unavailable defensive statistics.
+
+The full analysis is documented in:
+
+`results/phase_b_coach_ground_truth.md`
